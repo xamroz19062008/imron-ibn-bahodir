@@ -121,7 +121,7 @@ function handleFormSubmit(e) {
     comment: form.querySelector("textarea").value.trim(),
   };
 
-  fetch("http://127.0.0.1:5050/lead", {
+  fetch("https://imron-ibn-bahodir-backend.onrender.com/lead", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(payload),
